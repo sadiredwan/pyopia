@@ -1,0 +1,12 @@
+C:\Workspace\vsharp\vsharp\bin\Debug\netcoreapp3.1\vsharp.exe
+C:\Workspace\vsharp\vsharp\bin\Debug\netcoreapp3.1\vsharp.deps.json
+C:\Workspace\vsharp\vsharp\bin\Debug\netcoreapp3.1\vsharp.runtimeconfig.json
+C:\Workspace\vsharp\vsharp\bin\Debug\netcoreapp3.1\vsharp.runtimeconfig.dev.json
+C:\Workspace\vsharp\vsharp\bin\Debug\netcoreapp3.1\vsharp.dll
+C:\Workspace\vsharp\vsharp\bin\Debug\netcoreapp3.1\vsharp.pdb
+C:\Workspace\vsharp\vsharp\obj\Debug\netcoreapp3.1\vsharp.csprojAssemblyReference.cache
+C:\Workspace\vsharp\vsharp\obj\Debug\netcoreapp3.1\vsharp.AssemblyInfoInputs.cache
+C:\Workspace\vsharp\vsharp\obj\Debug\netcoreapp3.1\vsharp.AssemblyInfo.cs
+C:\Workspace\vsharp\vsharp\obj\Debug\netcoreapp3.1\vsharp.dll
+C:\Workspace\vsharp\vsharp\obj\Debug\netcoreapp3.1\vsharp.pdb
+C:\Workspace\vsharp\vsharp\obj\Debug\netcoreapp3.1\vsharp.genruntimeconfig.cache
