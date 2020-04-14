@@ -12,7 +12,6 @@ namespace vsharp
         static readonly string _assetsPath = Path.Combine(Environment.CurrentDirectory, "assets");
         static readonly string _imagesFolder = Path.Combine(_assetsPath, "images");
         static readonly string _trainTagsTsv = Path.Combine(_imagesFolder, "tags.tsv");
-        static readonly string _testTagsTsv = Path.Combine(_imagesFolder, "test-tags.tsv");
         static readonly string _predictSingleImage = Path.Combine(_imagesFolder, "toaster3.jpg");
         static readonly string _inceptionTensorFlowModel = Path.Combine(_assetsPath, "inception", "tensorflow_inception_graph.pb");
         static void Main(string[] args)
@@ -45,17 +44,6 @@ namespace vsharp
 
             IDataView trainingData = mlContext.Data.LoadFromTextFile<ImageData>(path: _trainTagsTsv, hasHeader: false);
             ITransformer model = pipeline.Fit(trainingData);
-            IDataView testData = mlContext.Data.LoadFromTextFile<ImageData>(path: _testTagsTsv, hasHeader: false);
-            IDataView predictions = model.Transform(testData);
-
-            // Create an IEnumerable for the predictions for displaying results
-            IEnumerable<ImagePrediction> imagePredictionData = mlContext.Data.CreateEnumerable<ImagePrediction>(predictions, true);
-            DisplayResults(imagePredictionData);
-
-            MulticlassClassificationMetrics metrics = mlContext.MulticlassClassification.Evaluate(predictions, labelColumnName: "LabelKey", predictedLabelColumnName: "PredictedLabel");
-
-            Console.WriteLine($"LogLoss is: {metrics.LogLoss}");
-            Console.WriteLine($"PerClassLogLoss is: {String.Join(" , ", metrics.PerClassLogLoss.Select(c => c.ToString()))}");
 
             return model;
         }
