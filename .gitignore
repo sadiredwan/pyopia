@@ -1,3 +1,7 @@
 shape_predictor_68_face_landmarks.dat
 **/vsharp/bin
 **/vsharp/assets/images
+**/vsharp/bin
+vsharp/obj/Debug/netcoreapp3.1/vsharp.pdb
+
+vsharp/.vs/vsharp/v16/.suo

@@ -14,6 +14,7 @@ namespace vsharp
         static readonly string _trainTagsTsv = Path.Combine(_imagesFolder, "tags.tsv");
         static readonly string _predictSingleImage = Path.Combine(_imagesFolder, "toaster3.jpg");
         static readonly string _inceptionTensorFlowModel = Path.Combine(_assetsPath, "inception", "tensorflow_inception_graph.pb");
+        
         static void Main(string[] args)
         {
             MLContext mlContext = new MLContext();
